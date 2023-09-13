@@ -18,9 +18,6 @@ export const Header = () => {
           {openMenu &&
             <div className="nav-header-mobile-container">
               <li className="nav-header-item" onClick={handleClick}>
-                <a href='#home'>Home</a>
-              </li>
-              <li className="nav-header-item" onClick={handleClick}>
                 <a href='#aboutme'>Sobre mim</a>
               </li>
               <li className="nav-header-item" onClick={handleClick}>
@@ -36,9 +33,6 @@ export const Header = () => {
           }
         </ul>
         <ul className="nav-header">
-          <li className="nav-header-item">
-            <a href='#home'>Home</a>
-          </li>
           <li className="nav-header-item">
             <a href='#aboutme'>Sobre mim</a>
           </li>

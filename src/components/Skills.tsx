@@ -1,4 +1,4 @@
-import { SkillData } from "../data/skills"
+import { SkillData } from "../data/ProjectAndSkills"
 
 import { useEffect, useRef, useState } from "react"
 

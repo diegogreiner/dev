@@ -1,4 +1,4 @@
-import { projectData } from "../data/projects";
+import { projectData } from "../data/ProjectAndSkills";
 import { ProjectShow } from './ProjectShow';
 
 import { useEffect, useRef, useState } from "react"
