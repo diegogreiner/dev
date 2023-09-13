@@ -1,4 +1,5 @@
 import thumb from '../images/logo.png'
+import cv from '../data/CV/Dev. Diego Greiner.pdf'
 
 export const Aboutme = () => {
   return (
@@ -12,7 +13,7 @@ export const Aboutme = () => {
             <p className="aboutme-banner-desc">
               Desenvolvedor Front-End
             </p>
-            <a href="/src/data/CV/Dev. Diego Greiner.pdf" download='Dev. Diego Greiner' className="btn">Download CV</a>
+            <a href={cv} download='Dev. Diego Greiner' className="btn">Download CV</a>
           </div>
           <div className="aboutme-banner-right">
             <img src={thumb} alt="" />
