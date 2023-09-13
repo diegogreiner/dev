@@ -1,3 +1,5 @@
+import thumb from '../images/logo.png'
+
 export const Aboutme = () => {
   return (
     <section id="aboutme">
@@ -13,7 +15,7 @@ export const Aboutme = () => {
             <a href="/src/data/CV/Dev. Diego Greiner.pdf" download='Dev. Diego Greiner' className="btn">Download CV</a>
           </div>
           <div className="aboutme-banner-right">
-            <img src="src/images/logo.png" alt="" />
+            <img src={thumb} alt="" />
           </div>
         </div>
         <div className="aboutme-text">
