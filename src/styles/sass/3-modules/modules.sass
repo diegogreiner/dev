@@ -1,0 +1,220 @@
+@use '../1-base/variables'
+@use '../1-base/_utilities'
+
+// HEADER
+.nav-header-item
+  padding: 0px 35px
+  transition: 1s
+  animation: show 3s normal
+
+  @include utilities.tablet
+    padding: 0px 20px
+
+  @include utilities.mobile
+    padding: 0px
+
+  &:hover
+    transform: variables.$scale
+
+  a
+    transition: 1s
+
+  a:hover
+    color: variables.$primary-color
+
+  i
+    transition: 1s
+    animation: show 3s normal
+
+    &:hover
+      color: variables.$primary-color
+
+.nav-header-mobile-icon i
+  transition: 1s
+  animation: show 3s normal
+
+  &:hover
+    transform: variables.$scale
+    color: variables.$primary-color
+
+.fa-times
+  margin-bottom: 10px
+
+// BTN
+.btn
+  @extend %btn
+
+// ABOUTME
+.aboutme-banner-title
+  width: 100%
+  font-size: 3rem
+  display: inline-block
+  overflow: hidden
+  white-space: nowrap
+  animation: show-typing 5s
+
+  @include utilities.tablet
+    font-size: 2rem
+
+  @include utilities.mobile
+    font-size: 1.5rem
+
+.aboutme-banner-left
+  @include utilities.mobile
+  display: flex
+  justify-content: center
+  flex-direction: column
+  margin-bottom: 20px
+  align-items: start
+
+br
+  @include utilities.mobile
+    display: none
+    
+.aboutme-banner-left span
+  width: 100%
+  display: inline-block
+  overflow: hidden
+  white-space: nowrap
+  color: variables.$primary-color
+  font-size: 3rem
+  font-weight: 700
+  margin-bottom: 10px
+  animation: show-typing-span 5s
+
+  @include utilities.tablet
+    font-size: 2rem
+
+  @include utilities.mobile
+    font-size: 1.5rem
+    margin-bottom: 5px
+
+.aboutme-banner-desc
+  font-size: 1.2rem
+  color: variables.$text-color-secundary
+  margin-bottom: 30px
+
+  @include utilities.tablet
+    font-size: 1rem
+    margin-bottom: 15px
+
+  @include utilities.mobile
+    font-size: .8rem
+
+.aboutme-banner-right
+  @include utilities.mobile
+    display: flex
+    justify-content: center
+    align-items: center
+
+.aboutme-banner-right img
+  width: 100%
+
+  @include utilities.mobile
+    width: 60%
+
+.text-title
+  @extend %text-title
+
+.bar-title
+  @extend %bar-title
+
+.animate-bar-title
+  animation: show-bar 3s
+
+.aboutme-text-desc
+  text-align: center
+  color: variables.$text-color-desc
+
+  @include utilities.mobile
+    font-size: .8rem
+    text-align: justify
+
+// SKILLS
+.skill-title
+  padding: 5px 0px
+
+  @include utilities.mobile
+    font-size: .8rem
+
+.skill-item img
+  width: 60px
+
+  @include utilities.tablet
+    width: 50px
+
+  @include utilities.mobile
+    width: 40px
+
+.border-bottom, .a
+  height: 3px
+  background-color: variables.$primary-color
+  width: 100%
+  position: absolute
+  bottom: 0
+  left: 0
+
+  @include utilities.tablet
+    height: 2px
+
+  @include utilities.mobile
+    height: 1px
+
+// PROJECTS
+.project-item > img
+  width: 100%
+  position: relative
+  opacity: .2
+
+  &:hover
+    opacity: 1
+
+.project-container-text
+  z-index: 1
+  position: absolute
+
+  &:hover
+    display: hidden
+
+.project-title
+  font-size: 1.2rem
+  margin-bottom: 10px
+
+  @include utilities.tablet
+    font-size: 1rem
+
+.project-skill
+  @extend %center
+
+  img
+    width: 25px
+    margin: 2px
+
+    @include utilities.tablet
+      width: 20px
+      margin: 1px
+
+
+// CONTACTS
+.contact-container-img img
+  width: 60px
+
+  @include utilities.tablet
+    width: 40px
+
+.contact-title
+  font-size: 1.1rem
+  padding: 15px 0px 10px 0px
+
+  @include utilities.tablet
+    font-size: 1rem
+
+  @include utilities.mobile
+    font-size: .9rem
+
+.contact-desc
+  color: variables.$text-color-secundary
+  font-size: .8rem
+
+  @include utilities.mobile
+    font-size: .8rem

@@ -1,0 +1,101 @@
+@use 'variables'
+
+// MIXINS
+
+@mixin mobile
+  @media (max-width: 450px)
+    @content
+
+@mixin tablet
+  @media (max-width: 800px)
+    @content
+
+@mixin laptop
+  @media (max-width: 1100px)
+    @content
+
+// PLACEHOLDER SELECTORS
+%center
+  display: flex
+  justify-content: center
+  align-items: center
+
+%btn
+  display: inline-block
+  margin: 0 auto
+  padding: 1rem 2rem
+  background-color: variables.$primary-color
+  transition: .5s
+  border-radius: 30px
+  text-align: center
+  animation: show 7s 
+
+  @include tablet
+    padding: .6rem 1.2rem
+
+  @include mobile
+    padding: .3rem .8rem
+    font-size: .9rem
+    width: 100%
+
+  &:hover
+    background-color: variables.$primary-color-hover
+    transform: scale(1.1)
+
+%text-title
+  font-size: 2.5rem
+  color: variables.$primary-color
+  padding-bottom: 20px
+
+  @include laptop
+    font-size: 2rem
+  
+  @include tablet
+    font-size: 1.8rem
+    padding-bottom: 15px
+
+  @include mobile
+    font-size: 1.3rem
+    padding-bottom: 10px
+
+
+%bar-title
+  max-width: 10%
+  height: 4px
+  background-color: variables.$primary-color
+
+  @include tablet
+    height: 3px
+
+  @include mobile
+    height: 2px
+
+// ANIMATION
+@keyframes show
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+
+@keyframes show-typing
+  0%
+    width: 0
+  100%
+    width: 100%
+
+@keyframes show-bar
+  0%
+    width: 0
+  100%
+    width: 25%
+
+@keyframes show-typing-span
+  0%
+    opacity: 0
+  50% 
+    width: 0
+    opacity: 0
+  51%
+    opacity: 1
+  100%
+    width: 100%

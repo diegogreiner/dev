@@ -1,0 +1,223 @@
+@use '../1-base/variables'
+@use '../1-base/_utilities'
+
+// BODY
+section
+  background-color: variables.$bg-color
+  max-width: 100vw
+
+.opacity
+  opacity: 0
+
+// HEADER  
+header 
+  background-color: variables.$bg-color-secundary
+  position: fixed
+  width: 100vw
+  z-index: 2
+  border-bottom: 1px solid variables.$primary-color
+
+.container 
+  max-width: variables.$container
+  margin: 0 auto
+  padding: 40px 0px
+  transition: 1s
+
+  @include utilities.mobile
+    padding: 20px 0
+
+.animate-container
+  animation: show 1.5s normal
+
+.container-header
+  max-width: variables.$container
+  margin: 0 auto
+  padding: 30px 0px
+
+  @include utilities.tablet
+    padding: 20px 0px
+
+  @include utilities.mobile
+    padding: 10px 0px
+
+.nav-header
+  @extend %center
+
+  @include utilities.mobile
+    display: none
+
+.nav-header-mobile-icon
+  display: none
+
+  @include utilities.mobile
+    display: flex
+    justify-content: center
+    align-items: end
+    flex-direction: column
+    padding: 0px 5px
+
+.nav-header-mobile
+  display: none
+
+  @include utilities.mobile
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    padding: 0px 5px
+
+.nav-header-mobile-container
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  gap: 5px
+
+// ABOUTME
+.aboutme-banner
+  display: flex
+  justify-content: space-around
+  align-items: center
+  padding: 100px 0 40px 0
+
+  @include utilities.tablet
+    padding: 80px 0 30px 0
+
+  @include utilities.mobile
+    padding: 40px 0 20px 0
+    flex-direction: column
+    justify-content: space-around
+    align-items: center
+
+.aboutme-text
+  margin: 0 auto 
+  width: 60%
+
+  @include utilities.laptop
+    width: 80%
+
+  @include utilities.mobile
+    width: 100%
+
+// SKILLS
+.skills-container-extern
+  display: grid
+  grid-template-columns: repeat(6, 1fr)
+  margin-top: 30px
+  
+  @include utilities.laptop
+    grid-template-columns: repeat(5, 1fr)
+    margin-top: 20px 
+
+  @include utilities.tablet
+    grid-template-columns: repeat(3, 1fr)
+    margin-top: 10px 
+
+  @include utilities.mobile
+    grid-template-columns: repeat(2, 1fr)
+    margin-top: 5px 
+
+.skill-item
+  @extend %center
+  flex-direction: column
+  box-shadow: 16px 16px 30px 11px rgba(0,0,0,0.1)
+  border-top-left-radius: 1rem
+  border-top-right-radius: 1rem
+  padding: 20px
+  margin: 10px
+  background-color: variables.$bg-color-item
+  transition: 1s
+  cursor: pointer
+  position: relative
+
+  @include utilities.tablet
+    padding: 10px
+    
+  @include utilities.mobile
+    padding: 5px
+    margin: 10px
+
+  &:hover
+    transform: scale(1.2)
+
+  li
+    @extend %center
+    flex-direction: column
+
+// PROJECTS
+.project-container-extern
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  gap: 30px
+  margin-top: 30px
+
+  @include utilities.laptop
+    grid-template-columns: repeat(2, 1fr)
+    margin-top: 20px 
+
+  @include utilities.tablet
+    margin-top: 10px 
+    gap: 20px
+
+  @include utilities.mobile
+    grid-template-columns: repeat(1, 1fr)
+    gap: 10px
+
+.project-item
+  @extend %center
+  justify-content: center
+  background-color: variables.$bg-color-item
+  transition: 1s
+  cursor: pointer
+  position: relative
+  text-align: center
+
+  &:hover
+    transform: variables.$scale
+    z-index: 1
+
+  li
+    @extend %center
+    flex-direction: column
+
+// CONTACTS
+.contact-container-extern
+  @extend %center
+  padding: 50px 0px 100px
+  gap: 100px
+  margin-top: 30px
+
+  @include utilities.tablet
+    display: grid
+    grid-template-columns: repeat(2, 1fr) 
+    padding: 0px 0px 100px 0px
+    gap: 40px
+    margin-top: 10px
+
+  @include utilities.mobile
+    grid-template-columns: repeat(1, 1fr) 
+    padding: 0px 0px 60px 0px
+    gap: 30px
+
+.container-contacts
+  @extend %center
+  flex-direction: column
+  transition: 1s
+
+  &:hover
+    transform: variables.$scale
+  
+.container-contacts-item
+  @extend %center
+  flex-direction: column
+
+.contact-container-img
+  padding: 15px 
+  background-color: variables.$bg-color-item
+  border-radius: 50%
+  @extend %center
+  flex-direction: column
+  box-shadow: 16px 16px 30px 11px rgba(0,0,0,0.1)
+
+  @include utilities.tablet
+    padding: 10px 
