@@ -1,3 +1,5 @@
+import bateria from '../images/projects/bateria.png'
+
 export const projectData = [
   {
     name: 'Calculadora de IMC', 
@@ -8,7 +10,7 @@ export const projectData = [
   {
     name: 'Bateria', 
     link: 'https://github.com/diegogreiner/projeto-bateria-js', 
-    image: 'src/images/projects/bateria.png',
+    image: bateria,
     images: ['src/images/skills/html.png', 'src/images/skills/css.png', 'src/images/skills/javascript.png']
   },{
     name: 'Jogo da velha', 
