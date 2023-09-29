@@ -9,24 +9,11 @@ type ProjectShowType = {
 }
 
 export const ProjectShow = ({ name, link, image, images, index }: ProjectShowType) => {
-  
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-
-  const handleMouseEnter = (index: number) => {
-    setHoveredIndex(index);
-  };
-
-  const handleMouseLeave = () => {
-    setHoveredIndex(null);
-  };
-
   return (
     <>
       <a href={link} target="_blank" key={index} className="project-container-a">
         <li
           className="project-item"
-          onMouseEnter={() => handleMouseEnter(index)}
-          onMouseLeave={handleMouseLeave}
         >
           <img src={image} alt={name} />
           <div className={'project-container-text'}
