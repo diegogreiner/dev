@@ -13,7 +13,7 @@ export const Aboutme = () => {
             <p className="aboutme-banner-desc">
               Desenvolvedor Front-End
             </p>
-            <a href={cv} download='Dev. Diego Greiner' className="btn">Download CV</a>
+            <a href={cv} download='Dev. Diego Greiner.pdf' className="btn">Download CV</a>
           </div>
           <div className="aboutme-banner-right">
             <img src={thumb} alt="" />

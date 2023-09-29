@@ -22,24 +22,20 @@ export const ProjectShow = ({ name, link, image, images, index }: ProjectShowTyp
 
   return (
     <>
-      <a href={link} target="_blank" key={index}>
+      <a href={link} target="_blank" key={index} className="project-container-a">
         <li
           className="project-item"
           onMouseEnter={() => handleMouseEnter(index)}
           onMouseLeave={handleMouseLeave}
         >
           <img src={image} alt={name} />
-          <div
-            className={
-              hoveredIndex === index ? 'project-container-text hidden' : 'project-container-text'
-            }
+          <div className={'project-container-text'}
           >
             <h1 className="project-title">{name}</h1>
             <div className="project-skill">
               {images && images.map((img, index) => (
                 <img key={index} src={img} alt={`Imagem ${index + 1}`} />
               ))}
-
             </div>
           </div>
           <div className="border-bottom"></div>

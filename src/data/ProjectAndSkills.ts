@@ -22,6 +22,10 @@ import reactjs from '../images/skills/reactjs.png'
 import sass from '../images/skills/sass.png'
 import tailwind from '../images/skills/tailwind.png'
 import typescript from '../images/skills/typescript.png'
+import styled from '../images/skills/styled.png'
+import reactTest from '../images/skills/ReactTest.png'
+import next from '../images/skills/next.png'
+import redux from '../images/skills/redux.png'
 
 export const projectData = [
   {
@@ -85,5 +89,9 @@ export const SkillData = [
   {name: 'Bootstrap', image: bootstrap},
   {name: 'SASS', image: sass},
   {name: 'MySQL', image: mysql},
-  {name: 'GitHub', image: github}
+  {name: 'GitHub', image: github},
+  {name: 'Styled Components', image: styled},
+  {name: 'React Testing', image: reactTest},
+  {name: 'Next.js', image: next},
+  {name: 'Redux', image: redux},
 ]
