@@ -36,13 +36,13 @@ export const Skills = () => {
           <div className={`bar-title ${isScrolled ? 'animate-bar-title' : ''}`}></div>
         </h1>
         <ul>
-          <div className='skills-container-extern'>
+          <div className='skills-container-extern' ref={itemRef}>
             {SkillData.map((skill, index) => (
               <div key={index} className="skill-item">
                 <li>
                   <h1 className="skill-title">{skill.name}</h1>
                   <img src={skill.image} alt={skill.name} />
-                  <div className="border-bottom" ref={itemRef}></div>
+                  <div className="border-bottom"></div>
                 </li>
               </div>
             ))}
