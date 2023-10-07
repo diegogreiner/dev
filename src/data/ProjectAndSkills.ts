@@ -17,7 +17,6 @@ import html from '../images/skills/html.png'
 import javascript from '../images/skills/javascript.png'
 import mysql from '../images/skills/mysql.png'
 import php from '../images/skills/php.png'
-import python from '../images/skills/python.png'
 import reactjs from '../images/skills/reactjs.png'
 import sass from '../images/skills/sass.png'
 import tailwind from '../images/skills/tailwind.png'
@@ -83,7 +82,6 @@ export const SkillData = [
   {name: 'JavaScript', image: javascript},
   {name: 'TypeScript', image: typescript},
   {name: 'PHP', image: php},
-  {name: 'Python', image: python},
   {name: 'React.js', image: reactjs},
   {name: 'Tailwind CSS', image: tailwind},
   {name: 'Bootstrap', image: bootstrap},
