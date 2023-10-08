@@ -27,7 +27,17 @@ export const Aboutme = () => {
             </h1>
           </div>
           <p className="aboutme-text-desc animate-container">
-            Sou um entusiasta da tecnologia, cursando Análise e Desenvolvimento de Sistemas. Com experiência em HTML, CSS, JavaScript, TypeScript, React.js, Sass, Bootstrap, Tailwind CSS, Git e SQL, estou sempre pronto para enfrentar novos desafios e projetos inovadores. Minha paixão pela programação é a base para criar soluções incríveis.
+            Sou movido pela paixão de aprender
+            novas tecnologias e aprimorar
+            constantemente as que já domino.
+            Tenho uma habilidade natural de me
+            adaptar a mudanças e sou um
+            comunicador eficaz, sempre buscando
+            colaborar com a equipe e ajudar os
+            outros sempre que possível. Acredito
+            que o trabalho em equipe é
+            fundamental para alcançar resultados
+            excepcionais.
           </p>
         </div>
       </div>
