@@ -1,32 +1,46 @@
 // Projects
-import calculadoraImc from '../images/projects/calculadoraImc.png'
-import bateria from '../images/projects/bateria.png'
-import jogoDaVelha from '../images/projects/jogoDaVelha.png'
-import memoria from '../images/projects/memoria.png'
-import pageBootstrap from '../images/projects/pageBootstrap.png'
-import quadroDesenho from '../images/projects/quadroDesenho.png'
-import quiz from '../images/projects/quiz.png'
-import urna from '../images/projects/urna.png'
-import vendaPizza from '../images/projects/vendaPizza.png'
+import calculadoraImc from '../../public/images/projects/calculadoraImc.png'
+import bateria from '../../public/images/projects/bateria.png'
+import jogoDaVelha from '../../public/images/projects/jogoDaVelha.png'
+import memoria from '../../public/images/projects/memoria.png'
+import pageBootstrap from '../../public/images/projects/pageBootstrap.png'
+import quadroDesenho from '../../public/images/projects/quadroDesenho.png'
+import quiz from '../../public/images/projects/quiz.png'
+import urna from '../../public/images/projects/urna.png'
+import vendaPizza from '../../public/images/projects/vendaPizza.png'
+import gestorFinanceiro from '../../public/images/projects/gestor-financeiro.png'
+import calculadorRotas from '../../public/images/projects/calc-routes.png'
 
 // Skills
-import bootstrap from '../images/skills/bootstrap.png'
-import css from '../images/skills/css.png'
-import github from '../images/skills/github.png'
-import html from '../images/skills/html.png'
-import javascript from '../images/skills/javascript.png'
-import mysql from '../images/skills/mysql.png'
-import php from '../images/skills/php.png'
-import reactjs from '../images/skills/reactjs.png'
-import sass from '../images/skills/sass.png'
-import tailwind from '../images/skills/tailwind.png'
-import typescript from '../images/skills/typescript.png'
-import styled from '../images/skills/styled.png'
-import reactTest from '../images/skills/ReactTest.png'
-import next from '../images/skills/next.png'
-import redux from '../images/skills/redux.png'
+import bootstrap from '../../public/images/skills/bootstrap.png'
+import css from '../../public/images/skills/css.png'
+import github from '../../public/images/skills/github.png'
+import html from '../../public/images/skills/html.png'
+import javascript from '../../public/images/skills/javascript.png'
+import mysql from '../../public/images/skills/mysql.png'
+import php from '../../public/images/skills/php.png'
+import reactjs from '../../public/images/skills/reactjs.png'
+import sass from '../../public/images/skills/sass.png'
+import tailwind from '../../public/images/skills/tailwind.png'
+import typescript from '../../public/images/skills/typescript.png'
+import styled from '../../public/images/skills/styled.png'
+import reactTest from '../../public/images/skills/ReactTest.png'
+import next from '../../public/images/skills/next.png'
+import redux from '../../public/images/skills/redux.png'
 
 export const projectData = [
+  {
+    name: 'Calculador de Rotas',
+    link: 'https://github.com/diegogreiner/calc-routes',
+    image: calculadorRotas,
+    images: [next, typescript, tailwind]
+  },
+  {
+    name: 'Gestor Financeiro',
+    link: 'https://github.com/diegogreiner/gerenciador-financas',
+    image: gestorFinanceiro,
+    images: [next, typescript, styled]
+  },
   {
     name: 'Calculadora de IMC', 
     link: 'https://github.com/diegogreiner/react-calc-imc', 

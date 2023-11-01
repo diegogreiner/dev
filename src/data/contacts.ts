@@ -1,7 +1,7 @@
-import phone from '../images/contacts/phone.png'
-import email from '../images/contacts/email.png'
-import github from '../images/contacts/github.png'
-import linkedin from '../images/contacts/linkedin.png'
+import phone from '../../public/images/contacts/phone.png'
+import email from '../../public/images/contacts/email.png'
+import github from '../../public/images/contacts/github.png'
+import linkedin from '../../public/images/contacts/linkedin.png'
 
 export const ContactData = [
   {

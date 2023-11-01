@@ -1,5 +1,5 @@
-import thumb from '../images/logo.png'
-import cv from '../data/CV/Dev. Diego Greiner.pdf'
+import thumb from '../../public/images/logo.png'
+import cv from '../data/CV/cv-diegogreiner.pdf'
 
 export const Aboutme = () => {
   return (
@@ -13,7 +13,7 @@ export const Aboutme = () => {
             <p className="aboutme-banner-desc">
               Desenvolvedor Front-End
             </p>
-            <a href={cv} download='Dev. Diego Greiner.pdf' className="btn">Download CV</a>
+            <a href={cv} download='cv-diegogreiner.pdf' className="btn">Download CV</a>
           </div>
           <div className="aboutme-banner-right">
             <img src={thumb} alt="" />
@@ -27,17 +27,7 @@ export const Aboutme = () => {
             </h1>
           </div>
           <p className="aboutme-text-desc animate-container">
-            Sou movido pela paixão de aprender
-            novas tecnologias e aprimorar
-            constantemente as que já domino.
-            Tenho uma habilidade natural de me
-            adaptar a mudanças e sou um
-            comunicador eficaz, sempre buscando
-            colaborar com a equipe e ajudar os
-            outros sempre que possível. Acredito
-            que o trabalho em equipe é
-            fundamental para alcançar resultados
-            excepcionais.
+            Desenvolvedor Front-end experiente, utilizo as tecnologias mais avançadas do mercado, criando projetos inovadores e soluções de alta qualidade que solucionam diversos problemas. Meu foco está sempre em otimizar o desempenho das aplicações, garantindo uma experiência excepcional para os usuários.
           </p>
         </div>
       </div>
